@@ -48,9 +48,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 First [`npm i -g angular-cli-ghpages`](https://github.com/angular-schule/angular-cli-ghpages), then:
 
     ng build --prod
-    cp README.md dist/samuel-marks-www
-    ngh --dir='dist/samuel-marks-www' --repo='https://github.com/SamuelMarks/SamuelMarks.github.io' --branch='master' --message='Using angular-cli-ghpages'
-
+    cp README.md dist/sydney-scientific-www
+    ngh --dir='dist/sydney-scientific-www' --repo='https://github.com/sydney-scientific/SydneyScientific.github.io' --branch='master' --message='Using angular-cli-ghpages' -c scientific.sydney
 
 ## Derived
 

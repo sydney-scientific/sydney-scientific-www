@@ -1,74 +1,145 @@
 <header class="docs-header-background">
-  <div class="docs-header-section">
-    <div class="docs-header-headline">
-      <h1 class="mat-h1">Sydney Scientific</h1>
-      <h2>Guide to my projects</h2>
+    <div class="docs-header-section">
+        <div class="docs-header-headline">
+            <h1 class="mat-h1">Sydney Scientific</h1>
+            <h2>Open-source technologies for distributed systems, DevOps, compilers and developer tooling</h2>
+        </div>
+        <div class="docs-header-start">
+            <a mat-raised-button class="docs-button" href="mailto:samuel@offscale.io" color="accent"
+               style="margin-right: 5px">
+                Join the team
+            </a>
+        </div>
     </div>
-    <div class="docs-header-start">
-      <a mat-raised-button class="docs-button" routerLink="/docs/getting-started" color="accent"
-         style="margin-right: 5px">
-        Get started
-      </a>
-
-      <a mat-raised-button class="docs-button" routerLink="/docs/learn-engineering" color="secondary">
-        Learn engineering
-      </a>
-    </div>
-  </div>
 </header>
 
 <div class="main">
-  <div fxLayout="row" fxLayout.xs="column">
-    <app-svg-viewer fxFlex="40" fxHide.xs
-                    src="../assets/img/homepage/sprintzerotoapp.svg"
-                    scaleToContainer="true">
-    </app-svg-viewer>
+    <h1 class="docs-markdown-h1">Major projects</h1>
+    <article>
+        <p class="docs-markdown-p">
+            Sydney Scientific is developing an ecosystem of technologies.
+        </p>
+        <p class="docs-markdown-p">
+            <a class="docs-markdown-a" href="https://www.rust-lang.org" target="_blank">Rust</a> and <a
+                class="docs-markdown-a" href="https://en.wikipedia.org/wiki/C%2B%2B" target="_blank">C++</a> are our
+            concentration, also we develop <a class="docs-markdown-a" href="https://en.wikipedia.org/wiki/Compiler"
+                                              target="_blank">compilers</a> for Rust (<a class="docs-markdown-a"
+                                                                                         href="https://actix.rs"
+                                                                                         target="_blank">actix</a> & <a
+                class="docs-markdown-a" href="https://diesel.rs" target="_blank">diesel</a>), <a class="docs-markdown-a"
+                                                                                                 href="https://en.wikipedia.org/wiki/IOS"
+                                                                                                 target="_blank">iOS</a>
+            (<a class="docs-markdown-a" href="https://swift.org" target="_blank">Swift</a>), <a class="docs-markdown-a"
+                                                                                                href="https://www.android.com"
+                                                                                                target="_blank">Android</a>
+            (<a class="docs-markdown-a" href="https://docs.oracle.com/javase/7/docs/technotes/guides/language"
+                target="_blank">Java</a>), and web (<a class="docs-markdown-a" href="https://angular.io"
+                                                       target="_blank">Angular</a>: <a class="docs-markdown-a"
+                                                                                       href="https://www.typescriptlang.org">TypeScript</a>
+            & HTML).
+        </p>
+        <p class="docs-markdown-p">
+            <a class="docs-markdown-a" href="https://en.wikipedia.org/wiki/Multicloud">Multicloud</a> stack in <a
+                class="docs-markdown-a" href="https://www.python.org">Python</a> currently, with <a
+                class="docs-markdown-a" href="https://libcloud.apache.org/" target="_blank">Apache Libcloud</a> & our
+            custom <a class="docs-markdown-a" href="https://www.vagrantup.com" target="_blank">Vagrant</a> driver.
+            Looking at rewriting in <a class="docs-markdown-a" href="https://golang.org" target="_blank">Go</a> using <a
+                class="docs-markdown-a" href="https://github.com/terraform-providers" target="_blank">Terraform
+            providers</a>.
+        </p>
+    </article>
+    <div fxLayout="row" fxLayout.xs="column">
+        <app-svg-viewer fxFlex="40" fxHide.xs
+                        src="../assets/img/homepage/MESOS.svg"
+                        scaleToContainer="true">
+        </app-svg-viewer>
 
-    <div class="docs-homepage-promo-desc" fxFlex="60">
-      <h2><a class="docs-markdown-a" href="https://github.com/SamuelMarks">Starter scaffolds</a></h2>
-      <ul>
-        <li><a class="docs-markdown-a" href="https://github.com/SamuelMarks/restify-orm-scaffold">Node.JS (multi-ORM;
-          multi-server [restify et al.])</a></li>
-        <li><a class="docs-markdown-a" href="https://github.com/SamuelMarks/ng-material-scaffold">Web (Angular 5 with
-          @angular/material and @angular/flex-layout)</a></li>
-        <li><a class="docs-markdown-a" href="https://github.com/SamuelMarks/android-auth-scaffold">Android (with
-          okhttp)</a></li>
-      </ul>
+        <div class="docs-homepage-promo-desc" fxFlex="60">
+            <h2 class="docs-markdown-h2"><a class="docs-markdown-a" href="https://mesos.apache.org" target="_blank">Apache
+                Mesos</a></h2>
+            <p class="docs-markdown-p">
+                Mesos was created for resource allocation at a large-scale.
+            </p>
+            <p class="docs-markdown-p">
+                Datacentres of heterogeneous loads. Before Mesos, clusters were [commonly] statically partitioned. These
+                15 nodes for Postgres, these 15 for applications, these 15 for recommender systems. At most, you'd
+                configure the latter to regress during idle time. The Mesos solution is to think of all these nodes as a
+                single resource pool, which has many advantages for cost, data locality, and speed (the researchers
+                invented <a class="docs-markdown-a" href="https://spark.apache.org">Spark</a> in the same project).
+            </p>
+
+            <p class="docs-markdown-p">
+                Mesos is <strong>horrible</strong> at small scale, and great at medium to 10,000 node scale.
+            </p>
+
+            <p class="docs-markdown-p">Our contributions aim to solve this problem. We decouple <a
+                    class="docs-markdown-a" href="https://zookeeper.apache.org" target="_blank">Apache ZooKeeper</a>,
+                and give the Mesos deployer a choice between: ZooKeeper, <a class="docs-markdown-a"
+                                                                            href="https://etcd.io"
+                                                                            target="_blank">etcd</a> and <a
+                        class="docs-markdown-a" href="https://www.consul.io" target="_blank">consul</a>.</p>
+        </div>
     </div>
-  </div>
 
-  <div fxLayout="row-reverse" fxLayout.xs="column">
-    <app-svg-viewer fxFlex="40" fxHide.xs
-                    src="../assets/img/homepage/fastandconsistent.svg"
-                    scaleToContainer="true">
-    </app-svg-viewer>
+    <div fxLayout="row-reverse" fxLayout.xs="column">
+        <img fxFlex="40" fxHide.xs
+             src="../assets/img/homepage/cdd.png"
+             style="object-fit: contain"/>
 
-    <div fxFlex="60">
-      <h2><a class="docs-markdown-a" href="https://github.com/stereostream">StereoStream</a></h2>
-      <p>WebRTC and WebSockets powered multi-webcam broadcast streaming solution. <a class="docs-markdown-a"
-                                                                                     href="https://github.com/stereostream/stereostream-angular">Web</a>;
-        <a class="docs-markdown-a" href="https://github.com/stereostream/stereostream-android">Android</a>; <a
-          class="docs-markdown-a" href="https://github.com/stereostream/stereostream-rest-api">REST API</a>.</p>
+        <div fxFlex="60">
+            <h2 class="docs-markdown-h2">Compiler Driven Development (CDD)</h2>
+            <p class="docs-markdown-p">
+                In application development, projects tend to be multi-tier (e.g.: database, backend, and frontend).
+                Nowadays, this often includes multi frontends (natives [incl. mobile] apps, web app).
+            </p>
+
+            <p class="docs-markdown-p">
+                Something as trivial as adding a field to a model result in ~36 lines of code changes (Swift for iOS,
+                Angular for web, Java for Android, Rust for backend).
+            </p>
+
+            <p class="docs-markdown-p">
+                CDD solution is straightforward: traverse the Abstract Syntax Tree (AST) in each language, translate it
+                to our <a class="docs-markdown-a" href="https://en.wikipedia.org/wiki/SQL" target="_blank">SQL</a>-extended
+                <a class="docs-markdown-a" href="https://github.com/OAI/OpenAPI-Specification" target="_blank">OpenAPI
+                    format</a>. Enable tests, documentation, validation, routing, and auto-admin views to be generated.
+                Yet still, always enable custom development of any file, in any language.</p>
+
+            <p class="docs-markdown-p">
+                Multi-directional compilation: OpenAPI &harr; {{'{'}}Java; Swift; TypeScript; Rust{{'}'}}.
+            </p>
+
+            <div class="docs-homepage-bottom-start">
+                <a mat-raised-button class="docs-button" routerLink="/docs/getting-started">Get started</a>
+            </div>
+        </div>
     </div>
-  </div>
 
+    <div fxLayout="row" fxLayout.xs="column">
+        <img fxFlex="40" fxHide.xs
+             src="../assets/img/homepage/cicd.png"
+             style="object-fit: contain"/>
 
-  <div fxLayout="row" fxLayout.xs="column">
-    <img fxFlex="40" fxHide.xs style="width: 100%; height: 20%"
-         src="../assets/img/Offscale%20logo.png"
-    />
+        <div class="docs-homepage-promo-desc" fxFlex="60">
+            <h2><a class="docs-markdown-a" href="https://github.com/SamuelMarks">CI/CD</a></h2>
+            <p class="docs-markdown-p">
+                There are over 50 different CI/CD formats and platforms on the market, with ~10 commonly used. Travis
+                CI, CircleCI, Gitlab CI, Azure pipelines, AWS CodePipeline, and Google cloudbuild; to name a few.
+            </p>
 
-    <div class="docs-homepage-promo-desc" fxFlex="60">
-      <h2><a class="docs-markdown-a" href="http://offscale.io">Offscale</a></h2>
-      <ul>
-        <li><a class="docs-markdown-a" href="https://github.com/offscale/offstrategy">CLI to create nodes on any of 50+
-          public and private clouds</a></li>
-        <li><a class="docs-markdown-a" href="https://github.com/offscale/offregister">CLI to deploy onto these nodes;
-          using Fabric, Ansible (with more easily addable)</a></li>
-        <li><a class="docs-markdown-a" href="https://github.com/offscale/offswitch">CLI to destroy nodes</a></li>
-      </ul>
+            <p class="docs-markdown-p">
+                By developing parser/emitters for each major format&mdash;in Rust&mdash;we remove vendor lock-in.
+            </p>
+
+            <p class="docs-markdown-p">
+                What is run on, say Travis CI, is hard to replicate locally. By creating small tools in Rust, we can run the equivalent during development. Projects like Gitlab require a large amount of resources allocated. Ours should run well at 1 node. And many. <small>Hint: see Mesos!</small>
+            </p>
+
+          <p class="docs-markdown-p">
+            FreeBSD jails and Solaris zones have lost interest in the shadow of Docker. There's no reason Dockerfile can't be just another format supported, thus allowing these other environments to be targeted.
+          </p>
+        </div>
     </div>
-  </div>
 </div>
 <!--
 <div class="docs-homepage-row docs-homepage-reverse-row">
@@ -83,6 +154,4 @@
   </div>
 </div>
 -->
-<div class="docs-homepage-bottom-start">
-  <a mat-raised-button class="docs-button" routerLink="/docs/getting-started">Get started</a>
-</div>
+
