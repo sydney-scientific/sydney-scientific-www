@@ -4,7 +4,7 @@
 
 @include mat-core();
 
-$primary: mat-palette($mat-blue-grey);
+$primary: mat-palette($mat-deep-orange);
 $accent: mat-palette($mat-amber, 800, A100, A400);
 
 $theme: mat-light-theme($primary, $accent);
@@ -18,7 +18,7 @@ a {
 
 .m2app-dark {
   $dark-primary: mat-palette($mat-pink, 700, 500, 900);
-  $dark-accent: mat-palette($mat-blue-grey, A200, A100, A400);
+  $dark-accent: mat-palette($mat-deep-orange, A200, A100, A400);
   $dark-warn: mat-palette($mat-deep-orange);
 
   $dark-theme: mat-dark-theme($dark-primary, $dark-accent, $dark-warn);

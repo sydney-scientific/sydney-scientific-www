@@ -1,145 +1,284 @@
 <header class="docs-header-background">
-    <div class="docs-header-section">
-        <div class="docs-header-headline">
-            <h1 class="mat-h1">Sydney Scientific</h1>
-            <h2>Open-source technologies for distributed systems, DevOps, compilers and developer tooling</h2>
-        </div>
-        <div class="docs-header-start">
-            <a mat-raised-button class="docs-button" href="mailto:samuel@offscale.io" color="accent"
-               style="margin-right: 5px">
-                Join the team
-            </a>
-        </div>
+  <div class="docs-header-section">
+    <div class="docs-header-headline">
+      <h1 class="mat-h1">Open-source. Rust.</h1>
+      <h2>Distributed systems, DevOps, compilers and developer tooling</h2>
     </div>
+    <div class="docs-header-start">
+      <a mat-raised-button class="docs-button" href="mailto:samuel@offscale.io" color="accent"
+         style="margin-right: 5px">
+        Join the team
+      </a>
+    </div>
+  </div>
 </header>
 
 <div class="main">
-    <h1 class="docs-markdown-h1">Major projects</h1>
-    <article>
-        <p class="docs-markdown-p">
-            Sydney Scientific is developing an ecosystem of technologies.
-        </p>
-        <p class="docs-markdown-p">
-            <a class="docs-markdown-a" href="https://www.rust-lang.org" target="_blank">Rust</a> and <a
-                class="docs-markdown-a" href="https://en.wikipedia.org/wiki/C%2B%2B" target="_blank">C++</a> are our
-            concentration, also we develop <a class="docs-markdown-a" href="https://en.wikipedia.org/wiki/Compiler"
-                                              target="_blank">compilers</a> for Rust (<a class="docs-markdown-a"
-                                                                                         href="https://actix.rs"
-                                                                                         target="_blank">actix</a> & <a
-                class="docs-markdown-a" href="https://diesel.rs" target="_blank">diesel</a>), <a class="docs-markdown-a"
-                                                                                                 href="https://en.wikipedia.org/wiki/IOS"
-                                                                                                 target="_blank">iOS</a>
-            (<a class="docs-markdown-a" href="https://swift.org" target="_blank">Swift</a>), <a class="docs-markdown-a"
-                                                                                                href="https://www.android.com"
-                                                                                                target="_blank">Android</a>
-            (<a class="docs-markdown-a" href="https://docs.oracle.com/javase/7/docs/technotes/guides/language"
-                target="_blank">Java</a>), and web (<a class="docs-markdown-a" href="https://angular.io"
-                                                       target="_blank">Angular</a>: <a class="docs-markdown-a"
-                                                                                       href="https://www.typescriptlang.org">TypeScript</a>
-            & HTML).
-        </p>
-        <p class="docs-markdown-p">
-            <a class="docs-markdown-a" href="https://en.wikipedia.org/wiki/Multicloud">Multicloud</a> stack in <a
-                class="docs-markdown-a" href="https://www.python.org">Python</a> currently, with <a
-                class="docs-markdown-a" href="https://libcloud.apache.org/" target="_blank">Apache Libcloud</a> & our
-            custom <a class="docs-markdown-a" href="https://www.vagrantup.com" target="_blank">Vagrant</a> driver.
-            Looking at rewriting in <a class="docs-markdown-a" href="https://golang.org" target="_blank">Go</a> using <a
-                class="docs-markdown-a" href="https://github.com/terraform-providers" target="_blank">Terraform
-            providers</a>.
-        </p>
-    </article>
-    <div fxLayout="row" fxLayout.xs="column">
-        <app-svg-viewer fxFlex="40" fxHide.xs
-                        src="../assets/img/homepage/MESOS.svg"
+  <h1 class="docs-markdown-h1">Major projects</h1>
+  <article>
+    <p class="docs-markdown-p">
+      Sydney Scientific is developing an ecosystem of technologies.
+    </p>
+    <p class="docs-markdown-p">
+      <a class="docs-markdown-a" href="https://www.rust-lang.org" target="_blank">Rust</a> and <a
+      class="docs-markdown-a" href="https://en.wikipedia.org/wiki/C%2B%2B" target="_blank">C++</a> are our
+      concentration, also we develop <a class="docs-markdown-a" href="https://en.wikipedia.org/wiki/Compiler"
+                                        target="_blank">compilers</a> for Rust (<a class="docs-markdown-a"
+                                                                                   href="https://actix.rs"
+                                                                                   target="_blank">actix</a> & <a
+      class="docs-markdown-a" href="https://diesel.rs" target="_blank">diesel</a>), <a class="docs-markdown-a"
+                                                                                       href="https://en.wikipedia.org/wiki/IOS"
+                                                                                       target="_blank">iOS</a>
+      (<a class="docs-markdown-a" href="https://swift.org" target="_blank">Swift</a>), <a class="docs-markdown-a"
+                                                                                          href="https://www.android.com"
+                                                                                          target="_blank">Android</a>
+      (<a class="docs-markdown-a" href="https://docs.oracle.com/javase/7/docs/technotes/guides/language"
+          target="_blank">Java</a>), and web (<a class="docs-markdown-a" href="https://angular.io"
+                                                 target="_blank">Angular</a>: <a class="docs-markdown-a"
+                                                                                 href="https://www.typescriptlang.org">TypeScript</a>
+      & HTML).
+    </p>
+    <p class="docs-markdown-p">
+      <a class="docs-markdown-a" href="https://en.wikipedia.org/wiki/Multicloud">Multicloud</a> stack in <a
+      class="docs-markdown-a" href="https://www.python.org">Python</a> currently, with <a
+      class="docs-markdown-a" href="https://libcloud.apache.org/" target="_blank">Apache Libcloud</a> & our
+      custom <a class="docs-markdown-a" href="https://www.vagrantup.com" target="_blank">Vagrant</a> driver.
+      Looking at rewriting in <a class="docs-markdown-a" href="https://golang.org" target="_blank">Go</a> using <a
+      class="docs-markdown-a" href="https://github.com/terraform-providers" target="_blank">Terraform
+      providers</a>.
+    </p>
+  </article>
+
+  <h1>Compiler Driven Development (CDD)</h1>
+  <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="20px">
+    <mat-card fxFlex>
+      <mat-card-header>
+        <app-svg-viewer src="../assets/img/homepage/rust.svg"
                         scaleToContainer="true">
         </app-svg-viewer>
+      </mat-card-header>
+      <mat-card-subtitle>REST API backend with actix &amp; diesel</mat-card-subtitle>
+    </mat-card>
 
-        <div class="docs-homepage-promo-desc" fxFlex="60">
-            <h2 class="docs-markdown-h2"><a class="docs-markdown-a" href="https://mesos.apache.org" target="_blank">Apache
-                Mesos</a></h2>
-            <p class="docs-markdown-p">
-                Mesos was created for resource allocation at a large-scale.
-            </p>
-            <p class="docs-markdown-p">
-                Datacentres of heterogeneous loads. Before Mesos, clusters were [commonly] statically partitioned. These
-                15 nodes for Postgres, these 15 for applications, these 15 for recommender systems. At most, you'd
-                configure the latter to regress during idle time. The Mesos solution is to think of all these nodes as a
-                single resource pool, which has many advantages for cost, data locality, and speed (the researchers
-                invented <a class="docs-markdown-a" href="https://spark.apache.org">Spark</a> in the same project).
-            </p>
+    <mat-card fxFlex>
+      <mat-card-header>
+        <app-svg-viewer src="../assets/img/homepage/Swift_logo_horz_lockup_color_rgb.svg"
+                        scaleToContainer="true">
+        </app-svg-viewer>
+      </mat-card-header>
+      <mat-card-subtitle>iOS frontend (native app)</mat-card-subtitle>
+      <mat-card-content>
+        <app-svg-viewer src="../assets/img/homepage/apple-ios-logo.svg"
+                        scaleToContainer="true">
+        </app-svg-viewer>
+      </mat-card-content>
+    </mat-card>
 
-            <p class="docs-markdown-p">
-                Mesos is <strong>horrible</strong> at small scale, and great at medium to 10,000 node scale.
-            </p>
+    <mat-card fxFlex>
+      <mat-card-header>
+        <app-svg-viewer src="../assets/img/homepage/logo-java-text-color.svg"
+                        scaleToContainer="true">
+        </app-svg-viewer>
+      </mat-card-header>
+      <mat-card-subtitle>Android frontend (native app)</mat-card-subtitle>
+      <mat-card-content>
+        <app-svg-viewer src="../assets/img/homepage/icon-android.svg"
+                        scaleToContainer="true">
+        </app-svg-viewer>
+      </mat-card-content>
+    </mat-card>
 
-            <p class="docs-markdown-p">Our contributions aim to solve this problem. We decouple <a
-                    class="docs-markdown-a" href="https://zookeeper.apache.org" target="_blank">Apache ZooKeeper</a>,
-                and give the Mesos deployer a choice between: ZooKeeper, <a class="docs-markdown-a"
-                                                                            href="https://etcd.io"
-                                                                            target="_blank">etcd</a> and <a
-                        class="docs-markdown-a" href="https://www.consul.io" target="_blank">consul</a>.</p>
-        </div>
+    <mat-card fxFlex>
+      <mat-card-header>
+        <app-svg-viewer src="../assets/img/homepage/typescript-logo.svg"
+                        scaleToContainer="true">
+        </app-svg-viewer>
+      </mat-card-header>
+      <mat-card-subtitle>Web frontend (Angular: TypeScript & HTML)</mat-card-subtitle>
+      <mat-card-content>
+        <app-svg-viewer src="../assets/img/homepage/angular.svg"
+                        scaleToContainer="true">
+        </app-svg-viewer>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <h1>Continuous Integration / Continuous Development (CI/CD)</h1>
+
+  <h2>Platforms</h2>
+  <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="20px">
+    <mat-card fxFlex>
+      <mat-card-header>
+        <img src="../../assets/img/homepage/FREEBSD_Logo_Horiz_Pos_RGB.png" alt="FreeBSD"/>
+      </mat-card-header>
+      <mat-card-subtitle>
+        <a href="https://www.freebsd.org/doc/handbook/jails.html" target="_blank">
+          Jails
+        </a>
+        &amp;
+        <a href="https://www.freebsd.org/doc/handbook/zfs.html" target="_blank">
+          ZFS
+        </a>
+      </mat-card-subtitle>
+    </mat-card>
+
+    <mat-card fxFlex>
+      <mat-card-header>
+        <app-svg-viewer src="../assets/img/homepage/MacOS_wordmark_(2017).svg"
+                        scaleToContainer="true">
+        </app-svg-viewer>
+      </mat-card-header>
+      <mat-card-subtitle>TBA</mat-card-subtitle>
+    </mat-card>
+
+    <mat-card fxFlex>
+      <mat-card-header>
+        <img src="../../assets/img/homepage/Windows_Logo.svg" alt="Windows"/>
+      </mat-card-header>
+      <mat-card-subtitle>
+        <a href="https://docs.microsoft.com/en-us/virtualization/windowscontainers/about/" target="_blank">
+          Windows containers (Dockerfile)
+        </a>
+      </mat-card-subtitle>
+    </mat-card>
+
+    <mat-card fxFlex>
+      <mat-card-header>
+        <img src="../../assets/img/homepage/linux-vs-docker-comparison-criteria.png" alt="Linux, Docker, LXC"/>
+      </mat-card-header>
+      <mat-card-subtitle>Docker; native cgroups &amp; namespaces; LXC; rkt</mat-card-subtitle>
+    </mat-card>
+  </div>
+
+  <h2>Configuration format support</h2>
+  <em>Native input and output (I/O) support</em>
+  <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="20px">
+    <mat-card style="background: #3EAAAF" fxFlex>
+      <mat-card-header>
+        <img src="../../assets/img/homepage/TravisCI-Full-Color-light.png" alt="Travis CI"/>
+      </mat-card-header>
+    </mat-card>
+
+    <mat-card style="background: black" fxFlex>
+      <mat-card-header>
+        <app-svg-viewer src="../assets/img/homepage/circle-ci.svg"
+                        scaleToContainer="true">
+        </app-svg-viewer>
+      </mat-card-header>
+    </mat-card>
+
+    <mat-card fxFlex>
+      <mat-card-header>
+        <app-svg-viewer src="../assets/img/homepage/Azure-Pipelines-logo.svg"
+                        scaleToContainer="true">
+        </app-svg-viewer>
+      </mat-card-header>
+    </mat-card>
+
+    <mat-card fxFlex>
+      <mat-card-header>
+        <img src="../../assets/img/homepage/gitlab-ci-cd-logo_2x.png" alt="Gitlab CI/CD" />
+      </mat-card-header>
+    </mat-card>
+  </div>
+
+  <hr style="margin-top: 50px">
+
+  <div fxLayout="row" fxLayout.xs="column">
+    <app-svg-viewer fxFlex="40" fxHide.xs
+                    src="../assets/img/homepage/MESOS.svg"
+                    scaleToContainer="true">
+    </app-svg-viewer>
+
+    <div class="docs-homepage-promo-desc" fxFlex="60">
+      <h2 class="docs-markdown-h2"><a class="docs-markdown-a" href="https://mesos.apache.org" target="_blank">Apache
+        Mesos</a></h2>
+      <p class="docs-markdown-p">
+        Mesos was created for resource allocation at a large-scale.
+      </p>
+      <p class="docs-markdown-p">
+        Datacentres of heterogeneous loads. Before Mesos, clusters were [commonly] statically partitioned. These
+        15 nodes for Postgres, these 15 for applications, these 15 for recommender systems. At most, you'd
+        configure the latter to regress during idle time. The Mesos solution is to think of all these nodes as a
+        single resource pool, which has many advantages for cost, data locality, and speed (the researchers
+        invented <a class="docs-markdown-a" href="https://spark.apache.org">Spark</a> in the same project).
+      </p>
+
+      <p class="docs-markdown-p">
+        Mesos is <strong>horrible</strong> at small scale, and great at medium to 10,000 node scale.
+      </p>
+
+      <p class="docs-markdown-p">Our contributions aim to solve this problem. We decouple <a
+        class="docs-markdown-a" href="https://zookeeper.apache.org" target="_blank">Apache ZooKeeper</a>,
+        and give the Mesos deployer a choice between: ZooKeeper, <a class="docs-markdown-a"
+                                                                    href="https://etcd.io"
+                                                                    target="_blank">etcd</a> and <a
+          class="docs-markdown-a" href="https://www.consul.io" target="_blank">consul</a>.</p>
     </div>
+  </div>
 
-    <div fxLayout="row-reverse" fxLayout.xs="column">
-        <img fxFlex="40" fxHide.xs
-             src="../assets/img/homepage/cdd.png"
-             style="object-fit: contain"/>
+  <div fxLayout="row-reverse" fxLayout.xs="column">
+    <img fxFlex="40" fxHide.xs
+         src="../assets/img/homepage/cdd.png" alt="CDD"
+         style="object-fit: contain; max-width: 500px; max-height: 100px; width: 100%; height: 100%"/>
 
-        <div fxFlex="60">
-            <h2 class="docs-markdown-h2">Compiler Driven Development (CDD)</h2>
-            <p class="docs-markdown-p">
-                In application development, projects tend to be multi-tier (e.g.: database, backend, and frontend).
-                Nowadays, this often includes multi frontends (natives [incl. mobile] apps, web app).
-            </p>
+    <div fxFlex="60">
+      <h2 class="docs-markdown-h2">Compiler Driven Development (CDD)</h2>
+      <p class="docs-markdown-p">
+        In application development, projects tend to be multi-tier (e.g.: database, backend, and frontend).
+        Nowadays, this often includes multi frontends (natives [incl. mobile] apps, web app).
+      </p>
 
-            <p class="docs-markdown-p">
-                Something as trivial as adding a field to a model result in ~36 lines of code changes (Swift for iOS,
-                Angular for web, Java for Android, Rust for backend).
-            </p>
+      <p class="docs-markdown-p">
+        Something as trivial as adding a field to a model result in ~36 lines of code changes (Swift for iOS,
+        Angular for web, Java for Android, Rust for backend).
+      </p>
 
-            <p class="docs-markdown-p">
-                CDD solution is straightforward: traverse the Abstract Syntax Tree (AST) in each language, translate it
-                to our <a class="docs-markdown-a" href="https://en.wikipedia.org/wiki/SQL" target="_blank">SQL</a>-extended
-                <a class="docs-markdown-a" href="https://github.com/OAI/OpenAPI-Specification" target="_blank">OpenAPI
-                    format</a>. Enable tests, documentation, validation, routing, and auto-admin views to be generated.
-                Yet still, always enable custom development of any file, in any language.</p>
+      <p class="docs-markdown-p">
+        CDD solution is straightforward: traverse the Abstract Syntax Tree (AST) in each language, translate it
+        to our <a class="docs-markdown-a" href="https://en.wikipedia.org/wiki/SQL" target="_blank">SQL</a>-extended
+        <a class="docs-markdown-a" href="https://github.com/OAI/OpenAPI-Specification" target="_blank">OpenAPI
+          format</a>. Enable tests, documentation, validation, routing, and auto-admin views to be generated.
+        Yet still, always enable custom development of any file, in any language.</p>
 
-            <p class="docs-markdown-p">
-                Multi-directional compilation: OpenAPI &harr; {{'{'}}Java; Swift; TypeScript; Rust{{'}'}}.
-            </p>
+      <p class="docs-markdown-p">
+        Multi-directional compilation: OpenAPI &harr; {{'{'}}Java; Swift; TypeScript; Rust{{'}'}}.
+      </p>
 
-            <div class="docs-homepage-bottom-start">
-                <a mat-raised-button class="docs-button" routerLink="/docs/getting-started">Get started</a>
-            </div>
-        </div>
+      <div class="docs-homepage-bottom-start">
+        <a mat-raised-button class="docs-button" routerLink="/docs/getting-started">Get started</a>
+      </div>
     </div>
+  </div>
 
-    <div fxLayout="row" fxLayout.xs="column">
-        <img fxFlex="40" fxHide.xs
-             src="../assets/img/homepage/cicd.png"
-             style="object-fit: contain"/>
+  <div fxLayout="row" fxLayout.xs="column">
+    <img fxFlex="40" fxHide.xs alt="CI/CD"
+         src="../assets/img/homepage/cicd.png"
+         style="object-fit: contain; max-width: 500px; max-height: 100px; width: 100%; height: 100%"/>
 
-        <div class="docs-homepage-promo-desc" fxFlex="60">
-            <h2><a class="docs-markdown-a" href="https://github.com/SamuelMarks">CI/CD</a></h2>
-            <p class="docs-markdown-p">
-                There are over 50 different CI/CD formats and platforms on the market, with ~10 commonly used. Travis
-                CI, CircleCI, Gitlab CI, Azure pipelines, AWS CodePipeline, and Google cloudbuild; to name a few.
-            </p>
+    <div class="docs-homepage-promo-desc" fxFlex="60">
+      <h2><a class="docs-markdown-a" href="https://github.com/SamuelMarks">CI/CD</a></h2>
+      <p class="docs-markdown-p">
+        There are over 50 different CI/CD formats and platforms on the market, with ~10 commonly used. Travis
+        CI, CircleCI, Gitlab CI, Azure pipelines, AWS CodePipeline, and Google cloudbuild; to name a few.
+      </p>
 
-            <p class="docs-markdown-p">
-                By developing parser/emitters for each major format&mdash;in Rust&mdash;we remove vendor lock-in.
-            </p>
+      <p class="docs-markdown-p">
+        By developing parser/emitters for each major format&mdash;in Rust&mdash;we remove vendor lock-in.
+      </p>
 
-            <p class="docs-markdown-p">
-                What is run on, say Travis CI, is hard to replicate locally. By creating small tools in Rust, we can run the equivalent during development. Projects like Gitlab require a large amount of resources allocated. Ours should run well at 1 node. And many. <small>Hint: see Mesos!</small>
-            </p>
+      <p class="docs-markdown-p">
+        What is run on, say Travis CI, is hard to replicate locally. By creating small tools in Rust, we can run the
+        equivalent during development. Projects like Gitlab require a large amount of resources allocated. Ours should
+        run well at 1 node. And many. <small>Hint: see Mesos!</small>
+      </p>
 
-          <p class="docs-markdown-p">
-            FreeBSD jails and Solaris zones have lost interest in the shadow of Docker. There's no reason Dockerfile can't be just another format supported, thus allowing these other environments to be targeted.
-          </p>
-        </div>
+      <p class="docs-markdown-p">
+        FreeBSD jails and Solaris zones have lost interest in the shadow of Docker. There's no reason Dockerfile can't
+        be just another format supported, thus allowing these other environments to be targeted.
+      </p>
     </div>
+  </div>
 </div>
 <!--
 <div class="docs-homepage-row docs-homepage-reverse-row">

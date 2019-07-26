@@ -111,3 +111,15 @@ $margin-promotion-sections-small: 15px;
     }
   }
 }
+
+.mat-card-header {
+  height: 150px;
+}
+
+img {
+  max-width: 350px;
+  max-height: 150px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
