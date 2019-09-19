@@ -49,54 +49,68 @@
     </p>
   </article>
 
-  <h1>Compiler Driven Development (CDD)</h1>
-  <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="20px">
-    <mat-card fxFlex>
+
+  <h1 style="padding-top: 50px">Compiler Driven Development (CDD)</h1>
+  <section>
+    <p>CDD translated model changes across language boundaries, updating:</p>
+    <ul>
+      <li>Models</li>
+      <li>Validation</li>
+      <li>API</li>
+      <li>Documentation</li>
+      <li>Tests</li>
+      <li>Mocks</li>
+    </ul>
+    <p>Speeding development <strong>36&times;</strong></p>
+  </section>
+
+  <div fxLayout.xs="column" fxLayout="row wrap" fxLayoutGap="10px" ngClass.gt-xs="ml-10">
+    <mat-card fxFlex.sm="0 1 calc(50%-10px)" fxFlex.md="0 1 calc(33%-10px)" fxFlex.gt-md="0 1 calc(25%-10px)">
       <mat-card-header>
-        <app-svg-viewer src="../assets/img/homepage/rust.svg"
+        <app-svg-viewer mat-card-image src="../assets/img/homepage/rust.svg"
                         scaleToContainer="true">
         </app-svg-viewer>
       </mat-card-header>
       <mat-card-subtitle>REST API backend with actix &amp; diesel</mat-card-subtitle>
     </mat-card>
 
-    <mat-card fxFlex>
+    <mat-card fxFlex.sm="0 1 calc(50%-10px)" fxFlex.md="0 1 calc(33%-10px)" fxFlex.gt-md="0 1 calc(25%-10px)">
       <mat-card-header>
-        <app-svg-viewer src="../assets/img/homepage/Swift_logo_horz_lockup_color_rgb.svg"
+        <app-svg-viewer mat-card-image src="../assets/img/homepage/Swift_logo_horz_lockup_color_rgb.svg"
                         scaleToContainer="true">
         </app-svg-viewer>
       </mat-card-header>
       <mat-card-subtitle>iOS frontend (native app)</mat-card-subtitle>
       <mat-card-content>
-        <app-svg-viewer src="../assets/img/homepage/apple-ios-logo.svg"
+        <app-svg-viewer mat-card-image src="../assets/img/homepage/apple-ios-logo.svg"
                         scaleToContainer="true">
         </app-svg-viewer>
       </mat-card-content>
     </mat-card>
 
-    <mat-card fxFlex>
+    <mat-card fxFlex.sm="0 1 calc(50%-10px)" fxFlex.md="0 1 calc(33%-10px)" fxFlex.gt-md="0 1 calc(25%-10px)">
       <mat-card-header>
-        <app-svg-viewer src="../assets/img/homepage/logo-java-text-color.svg"
+        <app-svg-viewer mat-card-image src="../assets/img/homepage/logo-java-text-color.svg"
                         scaleToContainer="true">
         </app-svg-viewer>
       </mat-card-header>
       <mat-card-subtitle>Android frontend (native app)</mat-card-subtitle>
       <mat-card-content>
-        <app-svg-viewer src="../assets/img/homepage/icon-android.svg"
+        <app-svg-viewer mat-card-image src="../assets/img/homepage/icon-android.svg"
                         scaleToContainer="true">
         </app-svg-viewer>
       </mat-card-content>
     </mat-card>
 
-    <mat-card fxFlex>
+    <mat-card fxFlex.sm="0 1 calc(50%-10px)" fxFlex.md="0 1 calc(33%-10px)" fxFlex.gt-md="0 1 calc(25%-10px)">
       <mat-card-header>
-        <app-svg-viewer src="../assets/img/homepage/typescript-logo.svg"
+        <app-svg-viewer mat-card-image src="../assets/img/homepage/typescript-logo.svg"
                         scaleToContainer="true">
         </app-svg-viewer>
       </mat-card-header>
       <mat-card-subtitle>Web frontend (Angular: TypeScript & HTML)</mat-card-subtitle>
       <mat-card-content>
-        <app-svg-viewer src="../assets/img/homepage/angular.svg"
+        <app-svg-viewer mat-card-image src="../assets/img/homepage/angular.svg"
                         scaleToContainer="true">
         </app-svg-viewer>
       </mat-card-content>
@@ -104,12 +118,16 @@
   </div>
 
   <h1>Continuous Integration / Continuous Development (CI/CD)</h1>
+  <section>
+    <p>CI/CD platforms are high maintenance. People aren't running CI/CD servers on their developer machines.
+      Stop limiting to Linux. Support all the major operating systems.</p>
+  </section>
 
   <h2>Platforms</h2>
-  <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="20px">
-    <mat-card fxFlex>
+  <div fxLayout.xs="column" fxLayout="row wrap" fxLayoutGap="10px" ngClass.gt-xs="ml-10">
+    <mat-card fxFlex.sm="0 1 calc(50%-10px)" fxFlex.md="0 1 calc(33%-10px)" fxFlex.gt-md="0 1 calc(25%-10px)">
       <mat-card-header>
-        <img src="../../assets/img/homepage/FREEBSD_Logo_Horiz_Pos_RGB.png" alt="FreeBSD"/>
+        <img mat-card-image src="../../assets/img/homepage/FREEBSD_Logo_Horiz_Pos_RGB.png" alt="FreeBSD"/>
       </mat-card-header>
       <mat-card-subtitle>
         <a href="https://www.freebsd.org/doc/handbook/jails.html" target="_blank">
@@ -122,18 +140,18 @@
       </mat-card-subtitle>
     </mat-card>
 
-    <mat-card fxFlex>
+    <mat-card fxFlex.sm="0 1 calc(50%-10px)" fxFlex.md="0 1 calc(33%-10px)" fxFlex.gt-md="0 1 calc(25%-10px)">
       <mat-card-header>
-        <app-svg-viewer src="../assets/img/homepage/MacOS_wordmark_(2017).svg"
+        <app-svg-viewer mat-card-image src="../assets/img/homepage/MacOS_wordmark_(2017).svg"
                         scaleToContainer="true">
         </app-svg-viewer>
       </mat-card-header>
       <mat-card-subtitle>TBA</mat-card-subtitle>
     </mat-card>
 
-    <mat-card fxFlex>
+    <mat-card fxFlex.sm="0 1 calc(50%-10px)" fxFlex.md="0 1 calc(33%-10px)" fxFlex.gt-md="0 1 calc(25%-10px)">
       <mat-card-header>
-        <img src="../../assets/img/homepage/Windows_Logo.svg" alt="Windows"/>
+        <img mat-card-image src="../../assets/img/homepage/Windows_Logo.svg" alt="Windows"/>
       </mat-card-header>
       <mat-card-subtitle>
         <a href="https://docs.microsoft.com/en-us/virtualization/windowscontainers/about/" target="_blank">
@@ -142,43 +160,41 @@
       </mat-card-subtitle>
     </mat-card>
 
-    <mat-card fxFlex>
-      <mat-card-header>
-        <img src="../../assets/img/homepage/linux-vs-docker-comparison-criteria.png" alt="Linux, Docker, LXC"/>
-      </mat-card-header>
+    <mat-card fxFlex.sm="0 1 calc(50%-10px)" fxFlex.md="0 1 calc(33%-10px)" fxFlex.gt-md="0 1 calc(25%-10px)">
+      <mat-card-content>
+        <img mat-card-image src="../../assets/img/homepage/linux-vs-docker-comparison-criteria.png"
+             alt="Linux, Docker, LXC"/>
+      </mat-card-content>
       <mat-card-subtitle>Docker; native cgroups &amp; namespaces; LXC; rkt</mat-card-subtitle>
     </mat-card>
   </div>
 
   <h2>Configuration format support</h2>
-  <em>Native input and output (I/O) support</em>
-  <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="20px">
-    <mat-card style="background: #3EAAAF" fxFlex>
-      <mat-card-header>
-        <img src="../../assets/img/homepage/TravisCI-Full-Color-light.png" alt="Travis CI"/>
-      </mat-card-header>
+  <section>
+    <p>There are many CI/CD formats. Rather than create a new one, we create parser/emitters&mdash;in Rust&mdash;to
+      convert between the various formats.</p>
+  </section>
+  <div id="cicd-config-formats" fxLayout.xs="column" fxLayout="row wrap" fxLayoutGap="10px" ngClass.gt-xs="ml-10">
+    <mat-card style="background: #3EAAAF" fxFlex.sm="0 1 calc(50%-10px)" fxFlex.md="0 1 calc(33%-10px)"
+              fxFlex.gt-md="0 1 calc(25%-10px)">
+      <img mat-card-image src="../../assets/img/homepage/TravisCI-Full-Color-light.png" alt="Travis CI"/>
     </mat-card>
 
-    <mat-card style="background: black" fxFlex>
-      <mat-card-header>
-        <app-svg-viewer src="../assets/img/homepage/circle-ci.svg"
-                        scaleToContainer="true">
-        </app-svg-viewer>
-      </mat-card-header>
+    <mat-card style="background: black" fxFlex.sm="0 1 calc(50%-10px)" fxFlex.md="0 1 calc(33%-10px)"
+              fxFlex.gt-md="0 1 calc(25%-10px)">
+      <app-svg-viewer mat-card-image src="../assets/img/homepage/circle-ci.svg"
+                      scaleToContainer="true">
+      </app-svg-viewer>
     </mat-card>
 
-    <mat-card fxFlex>
-      <mat-card-header>
-        <app-svg-viewer src="../assets/img/homepage/Azure-Pipelines-logo.svg"
-                        scaleToContainer="true">
-        </app-svg-viewer>
-      </mat-card-header>
+    <mat-card fxFlex.sm="0 1 calc(50%-10px)" fxFlex.md="0 1 calc(33%-10px)" fxFlex.gt-md="0 1 calc(25%-10px)">
+      <app-svg-viewer mat-card-image src="../assets/img/homepage/Azure-Pipelines-logo.svg"
+                      scaleToContainer="true">
+      </app-svg-viewer>
     </mat-card>
 
-    <mat-card fxFlex>
-      <mat-card-header>
-        <img src="../../assets/img/homepage/gitlab-ci-cd-logo_2x.png" alt="Gitlab CI/CD" />
-      </mat-card-header>
+    <mat-card fxFlex.sm="0 1 calc(50%-10px)" fxFlex.md="0 1 calc(33%-10px)" fxFlex.gt-md="0 1 calc(25%-10px)">
+      <img mat-card-image src="../../assets/img/homepage/gitlab-ci-cd-logo_2x.png" alt="Gitlab CI/CD"/>
     </mat-card>
   </div>
 
@@ -215,6 +231,7 @@
                                                                     target="_blank">etcd</a> and <a
           class="docs-markdown-a" href="https://www.consul.io" target="_blank">consul</a>.</p>
     </div>
+
   </div>
 
   <div fxLayout="row-reverse" fxLayout.xs="column">
@@ -254,9 +271,9 @@
   <div fxLayout="row" fxLayout.xs="column">
     <img fxFlex="40" fxHide.xs alt="CI/CD"
          src="../assets/img/homepage/cicd.png"
-         style="object-fit: contain; max-width: 500px; max-height: 100px; width: 100%; height: 100%"/>
+         style="object-fit: contain; width: 100%; height: 100%"/>
 
-    <div class="docs-homepage-promo-desc" fxFlex="60">
+    <div class="docs-homepage-promo-desc" fxFlex="58">
       <h2><a class="docs-markdown-a" href="https://github.com/SamuelMarks">CI/CD</a></h2>
       <p class="docs-markdown-p">
         There are over 50 different CI/CD formats and platforms on the market, with ~10 commonly used. Travis
@@ -280,17 +297,3 @@
     </div>
   </div>
 </div>
-<!--
-<div class="docs-homepage-row docs-homepage-reverse-row">
-  <div class="docs-homepage-promo-img">
-    <app-svg-viewer
-      src="../assets/img/homepage/optimized.svg"
-      scaleToContainer="true"></app-svg-viewer>
-  </div>
-  <div class="docs-homepage-promo-desc">
-    <h2>Optimized for Angular</h2>
-    <p>Built by the Angular team to integrate seamlessly with Angular.</p>
-  </div>
-</div>
--->
-

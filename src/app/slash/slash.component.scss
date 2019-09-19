@@ -116,10 +116,59 @@ $margin-promotion-sections-small: 15px;
   height: 150px;
 }
 
-img {
-  max-width: 350px;
-  max-height: 150px;
+.scale {
   width: auto;
   height: auto;
   object-fit: contain;
+}
+
+/*
+img {
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+*/
+.gcell {
+  .header {
+    background-color: #e3e3e3;
+  }
+
+  .side {
+    background-color: #e3e3ff;
+  }
+
+  .content {
+    background-color: #e3ffe3;
+  }
+
+  .footer {
+    background-color: #ffe3e3;
+  }
+
+  grid-row-gap: 30px;
+}
+
+
+.img {
+  width: 100%;
+  margin-bottom: 18%;
+}
+.card-picture {
+  width: 23%;
+  margin-bottom: 2%;
+}
+.container {
+  min-height: 100%;
+  width: 100%;
+}
+.search-form {
+  width: 90%;
+}
+
+#cicd-config-formats {
+  .mat-card {
+    max-height: 150px;
+    overflow-y: auto;
+  }
 }
