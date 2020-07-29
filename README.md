@@ -1,9 +1,9 @@
-Samuel Marks docs site
-======================
+Sydney Scientific website
+=========================
 
-Bunch of guides for using my projects.
+Eventually, this will be a unified website showing what the charity, business, and person do; with links to those respective sites.
 
-Eventually will end up with links to subprojects (organisations); and very little actual content.
+Currently it's just a hodge-modje of ideas for the DevOps part of the Offscale website.
 
 ## Build dist
 
