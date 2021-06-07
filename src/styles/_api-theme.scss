@@ -1,3 +1,4 @@
+@use '~@angular/material' as mat;
 @import '../../node_modules/@angular/material/theming';
 
 // Mixin to apply theme colors for generated API docs.
@@ -10,12 +11,12 @@
   $is-dark-theme: map-get($theme, is-dark);
 
   .docs-api-method-name-cell {
-    color: mat-color($primary, 800);
+    color: mat.get-color-from-palette($primary, 800);
   }
 
   .docs-api-method-returns-type,
   .docs-api-method-parameter-type {
-    color: mat-color($primary, darker);
+    color: mat.get-color-from-palette($primary, darker);
   }
 
   // Force the top-level API docs header to be hidden, since this is already
@@ -33,6 +34,6 @@
   .docs-api-module-import,
   .docs-api-class-selector-name,
   .docs-api-class-export-name {
-    background: rgba(mat-color($foreground, secondary-text), 0.06);
+    background: rgba(mat.get-color-from-palette($foreground, secondary-text), 0.06);
   }
 }
