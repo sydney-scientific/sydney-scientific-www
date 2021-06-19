@@ -22,8 +22,9 @@ jobs:
         run: |
           npm i -g npm
           npm i -g @angular/cli typescript angular-cli-ghpages
+          ng add --skip-confirmation angular-cli-ghpages
           npm ci
-          ng build --prod
+          ng build --configuration production
           cp README.md dist/sydney-scientific-www
           MSG="$(git show -s --format='%s' "$GITHUB_SHA")"
           email_author="$(git log -1 --pretty=format:'%an <%ce>')"
@@ -31,4 +32,4 @@ jobs:
           git config --global user.name "$author"
           email="${email_author#*<}"; email="${email::-1}"
           git config --global user.email "$email"
-          ngh --dir='dist/sydney-scientific-www' --repo='https://'"$GITHUB_TOKEN"'@github.com/sydney-scientific/SydneyScientific.github.io' -c 'scientific.sydney' --branch='master' --message="$MSG" --no-silent
+          ng deploy sydney-scientific-www --cname='scientific.sydney' --repo='https://'"$GITHUB_TOKEN"'@github.com/codegen-driven-dev/codegen-driven-dev.github.io' --branch='master' --message="$MSG" --name="$name" --email="$email" --no-silent
