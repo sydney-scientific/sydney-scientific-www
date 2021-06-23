@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 
-import { SvgViewerComponent } from './svg-viewer.component';
-
+import {SvgViewerComponent} from './svg-viewer.component';
 
 @NgModule({
-  imports: [HttpClientModule],
   exports: [SvgViewerComponent],
+  imports: [
+    CommonModule, HttpClientModule
+  ],
   declarations: [SvgViewerComponent],
 })
-export class SvgViewerModule {}
+export class SvgViewerModule { }

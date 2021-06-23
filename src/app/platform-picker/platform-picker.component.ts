@@ -9,7 +9,7 @@ import { Platform, PlatformPickerService } from './platform-picker.service';
   encapsulation: ViewEncapsulation.None
 })
 export class PlatformPickerComponent implements OnInit {
-  platformSelectd: string;
+  platformSelectd: string = "Linux";
 
   constructor(public platformPickerService: PlatformPickerService) {
   }

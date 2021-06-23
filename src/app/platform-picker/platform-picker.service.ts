@@ -7,7 +7,7 @@ export class PlatformPickerService {
   platforms: Platform[] = [
     'macOS', 'Linux', 'Windows'
   ];
-  private _platform: string;
+  private _platform!: string;
 
   constructor() {
     const platForm = localStorage.getItem('platform');
