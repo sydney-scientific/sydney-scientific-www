@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
-import { FlexLayoutModule } from '@angular/flex-layout';
+import { FlexLayoutModule } from 'ng-flex-layout';
 
 import { MaterialImportModule } from '../material-import/material-import.module';
 import { SvgViewerModule } from '../svg-viewer/svg-viewer.module';
