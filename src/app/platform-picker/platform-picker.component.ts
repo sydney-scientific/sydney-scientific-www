@@ -3,10 +3,11 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Platform, PlatformPickerService } from './platform-picker.service';
 
 @Component({
-  selector: 'app-platform-picker',
-  templateUrl: './platform-picker.component.html',
-  styleUrls: ['./platform-picker.component.css'],
-  encapsulation: ViewEncapsulation.None
+    selector: 'app-platform-picker',
+    templateUrl: './platform-picker.component.html',
+    styleUrls: ['./platform-picker.component.css'],
+    encapsulation: ViewEncapsulation.None,
+    standalone: false
 })
 export class PlatformPickerComponent implements OnInit {
   platformSelectd: string = "Linux";
