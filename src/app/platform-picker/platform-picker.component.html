@@ -1,8 +1,10 @@
 <mat-form-field>
   <mat-select [(ngModel)]="platformSelectd"
-              (selectionChange)=updateService($event)>
-    <mat-option *ngFor="let platform of platformPickerService.platforms" [value]=platform>
-      {{ platform }}
-    </mat-option>
+    (selectionChange)=updateService($event)>
+    @for (platform of platformPickerService.platforms; track platform) {
+      <mat-option [value]=platform>
+        {{ platform }}
+      </mat-option>
+    }
   </mat-select>
 </mat-form-field>
